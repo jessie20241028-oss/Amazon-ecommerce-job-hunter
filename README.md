@@ -44,3 +44,19 @@ shenzhen-ecommerce-job-hunter/
 候选人画像位于 references/candidate-profile.md；评分标准位于 references/scoring-rules.md。修改时请确保 SKILL.md 与参考文件保持一致。
 License
 MIT，详见 LICENSE。
+
+
+## Product roadmap
+
+See [docs/ROADMAP.md](docs/ROADMAP.md) for the v1.1 → v1.2 → v2.0 implementation plan.
+
+- **v1.1:** BOSS直聘 / 猎聘 source adapters, salary normalization, evidence checks and deduplication.
+- **v1.2:** Feishu Bitable tables for jobs, companies, HR contacts, communications, applications, interviews and tasks.
+- **v2.0:** Scheduled monitoring, change detection, scoring, notifications and approval-gated actions.
+
+Implementation specifications:
+- [v1.1 Platform Adapters](docs/V1.1-PLATFORM-ADAPTERS.md)
+- [v1.2 Feishu Bitable](docs/V1.2-FEISHU-BITABLE.md)
+- [v2.0 Automation Agent](docs/V2.0-AUTOMATION-AGENT.md)
+
+CSV import templates for Feishu are in templates/feishu-*.csv. The current release documents the architecture and import schema; live Feishu API access and scheduled monitoring require the user's workspace authorization and configuration.
